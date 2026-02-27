@@ -190,3 +190,38 @@ function mul(x,y)
 }
 document.write(res);
  document.write("<br/>");
+
+ //arrow function
+var add2=(a,b)=>
+{
+    console.log(a+b);
+};
+add2(102,20);
+
+//arrow function for single line parameters
+var add3=(a,b)=>console.log(a+b);
+add3(30,20);
+
+//object
+var pers=
+{
+    name:"John",
+    age:30,
+    isMarried:true,
+    address:{
+        street:'Vinay nagar',
+        flatNo:201
+    }
+};
+for (let x in pers){
+    console.log("Person is married: " + pers["isMarried"])
+}
+
+var pers2= new Object();
+    pers2.name='Krishna';   //to add properties to this object
+    pers2.age=32;
+    pers2.isMarried=true;
+    pers2.address={};    //declare first
+    pers2.address.street='nagar road';  //then initialise
+    pers2['address']['flatNo']=33;
+    console.log(pers2)
