@@ -225,3 +225,43 @@ var pers2= new Object();
     pers2.address.street='nagar road';  //then initialise
     pers2['address']['flatNo']=33;
     console.log(pers2)
+
+    var myinfo=new Array();
+    var myinfo1=Array();
+    console.log(myinfo,myinfo1);     //same creation in js with or without new keyword
+
+    let collection=[
+        {},      //function
+        [],         //object
+        true,
+        "john",
+        function () {},
+        9000989193,
+        undefined,
+        null,
+        new String("abc"),    //object
+        new Date(),
+    ];
+    console.log(collection);
+    collection.teacherName="John Mac";
+    collection.phoneNo=9500008193;
+    // length of array does not change 
+    // since it is not inserted it is increased property wise
+
+    var trainerinfo=["Jitendra",29,"Ghaziabad",{isMarried:true}];
+    console.log(trainerinfo);
+
+    console.log(trainerinfo[trainerinfo.length-1]);
+
+    console.log(trainerinfo[trainerinfo.length]);
+    trainerinfo.contact=9971660499;
+    console.log(trainerinfo);
+
+    const result=document.getElementById("para");   //unique so only 1 element
+    result.innerHTML="my self";
+    result.title="myname";
+    console.log(result);
+
+  const result2=document.getElementsByClassName("heading");
+  result2.innerHTML="hii";
+
