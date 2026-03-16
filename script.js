@@ -276,28 +276,53 @@
 
 //  const text2=document.querySelectorAll("ul li");
 
- const element=document.getElementById("myH1");
- let text=element.getAttribute("class");
- document.getElementById("demo").innerHTML=text;
+//  const element=document.getElementById("myH1");
+//  let text=element.getAttribute("class");
+//  document.getElementById("demo").innerHTML=text;
 
- function myFunction()
- {
- document.getElementById("myH2").setAttribute("class","democlass");
- }
+//  function myFunction()
+//  {
+//  document.getElementById("myH2").setAttribute("class","democlass");
+//  }
 
- const heading=document.createElement("h2");
- const bodytag=document.getElementByTagName("body"); //element not elements
- bodytag[0].append();
- heading.innerText="hello";
- heading.style.backgroundColor="red";
-//node.prepend() node.append   (inside)
-// node.before()      node.after()       (outside)
+//  const heading=document.createElement("h2");
+//  const bodytag=document.getElementByTagName("body"); //element not elements
+//  bodytag[0].append();
+//  heading.innerText="hello";
+//  heading.style.backgroundColor="red";
+// //node.prepend() node.append   (inside)
+// // node.before()      node.after()       (outside)
 
-//node.remove()   removes the node
+// //node.remove()   removes the node
 
-function practice()
-{
-    document.open();
-    document.write("<h1>PRACTICE</h1>");
-    document.close();
+// function practice()
+// {
+//     document.open();
+//     document.write("<h1>PRACTICE</h1>");
+//     document.close();
+// }
+
+//mouse events
+// click onclick
+function onMouseOver(){
+   console.log("On Mouse Over");
 }
+function onMouseOut()
+{
+   console.log("On Mouse Out");
+}
+function onMouseDown()
+{
+   console.log("On Mouse Down");
+}
+function onMouseUp()
+{
+   console.log("On Mouse Up");
+}
+
+function onMouseMove()
+{
+   console.log("On Mouse Move");
+}
+
+
