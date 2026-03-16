@@ -285,4 +285,19 @@
  document.getElementById("myH2").setAttribute("class","democlass");
  }
 
- 
+ const heading=document.createElement("h2");
+ const bodytag=document.getElementByTagName("body"); //element not elements
+ bodytag[0].append();
+ heading.innerText="hello";
+ heading.style.backgroundColor="red";
+//node.prepend() node.append   (inside)
+// node.before()      node.after()       (outside)
+
+//node.remove()   removes the node
+
+function practice()
+{
+    document.open();
+    document.write("<h1>PRACTICE</h1>");
+    document.close();
+}
